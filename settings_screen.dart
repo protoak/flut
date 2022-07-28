@@ -35,15 +35,18 @@ class _SettingsState extends State<Settings> {
                       });
                     },
                     child: Text('Complete'),
+                     style: ElevatedButton.styleFrom(
+                        primary: Colors.black),
                   ),
                   ElevatedButton(
                     onPressed: () {
                       setState(() {
                         Navigator.of(context).pop();
                       });
-                    },
-                    child: Text('cancel'),
-                  ),
+                   },
+                   child: Text('cancel'),
+                    style: ElevatedButton.styleFrom(
+                        primary: Colors.black)),
                 ],
               ));
         });
@@ -89,6 +92,8 @@ class _SettingsState extends State<Settings> {
                         }
                       },
                       child: Text('add'),
+                       style: ElevatedButton.styleFrom(
+                        primary: Colors.black),
                     ),
                     ElevatedButton(
                       onPressed: () {
@@ -97,6 +102,8 @@ class _SettingsState extends State<Settings> {
                         });
                       },
                       child: Text('cancel'),
+                      style: ElevatedButton.styleFrom(
+                          primary: Colors.black),
                     )
                   ],
                 ),
